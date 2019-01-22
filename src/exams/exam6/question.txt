@@ -1,0 +1,16 @@
+/**
+ *
+ * Try to complete the following ：
+ *
+ *  console.log(camelcase('HELLO WORLD')) // helloWorld
+ *
+ *  console.log(camelcase('HELLO         WORLD')) // helloWorld
+ *
+ *  console.log(camelcase('muthu')) // muthu
+ *
+ *  console.log(camelcase('hi----you')) // hiYou
+ *
+ **/
+function camelcase(str) {
+ //you code in here
+}

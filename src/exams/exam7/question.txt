@@ -1,0 +1,22 @@
+
+/**
+ *
+ *  Try to complete the following ：
+ *
+ *  const say = function(name, words, callback){
+ *    setTimeout(function(){
+ *      callback({ status: 'FINISHED' })
+ *    })
+ *  }
+ *
+ *  const tSay = tfy(say);
+ *
+ *  tSay('mks', 'You are freak.')(function(err, data){
+ *    console.log(err)  // undefined
+ *    console.log(data) // { status: 'FINISHED' }
+ *  })
+ *
+ **/
+function tfy(func) {
+   //you code in here
+   }

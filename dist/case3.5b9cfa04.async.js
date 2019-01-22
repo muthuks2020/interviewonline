@@ -1,0 +1,1 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([[10],{"1QHO":function(e,a,r){"use strict";Object.defineProperty(a,"__esModule",{value:!0}),a.default=void 0;var t=["const arr = [8, 2, 16, 90]\nconst compareArr = [8, 2, 16, 90, 8, 2, 16, 90]\nassert.deepEqual(duplicate(arr), compareArr, 'Basic test failed')"];a.default=t}}]);
