@@ -68,5 +68,76 @@ export const routes = [
       return /^function\s*value\(anything\)\s*{[\s\S]*}$/.test(realCode)
     },
     testCase: getTestCaseRunner(() => import(/* webpackChunkName: "case5" */ '../exams/exam5/testcase'))
+  },
+  {
+    path: '/exam6',
+    title: 'Complete a camelcase function',
+    content: getCodeContent(() => import(/* webpackChunkName: "exam6" */ '../exams/exam6/question.txt')),
+    contentValidator(code) {
+      return /function\s*camelcase\(str\)\s*{[\s\S]*}/.test(code)
+    },
+    contentIntegrityValidator(code) {
+      const realCode = removeComments(code)
+      return /^function\s*camelcase\(str\)\s*{[\s\S]*}$/.test(realCode)
+    },
+    testCase: getTestCaseRunner(() => import(/* webpackChunkName: "case6" */ '../exams/exam6/testcase'))
+  },
+  {
+    path: '/exam7',
+    title: 'Complete a thunkify function',
+    content: getCodeContent(() => import(/* webpackChunkName: "exam7" */ '../exams/exam7/question.txt')),
+    contentValidator(code) {
+      return /function\s*thunkify\(func\)\s*{[\s\S]*}/.test(code)
+    },
+    contentIntegrityValidator(code) {
+      const realCode = removeComments(code)
+      return /^function\s*thunkify\(func\)\s*{[\s\S]*}$/.test(realCode)
+    },
+    testCase: getTestCaseRunner(() => import(/* webpackChunkName: "case7" */ '../exams/exam7/testcase'))
+  },
+  {
+    path: '/exam8',
+    title: 'Complete a times (multiple build) function',
+    content: getCodeContent(() => import(/* webpackChunkName: "exam8" */ '../exams/exam8/question.txt')),
+    contentValidator(code) {
+      return /function\s*times\(n,\s*func\)\s*{[\s\S]*}/.test(code)
+    },
+    contentIntegrityValidator(code) {
+      const realCode = removeComments(code)
+      return /^function\s*times\(n,\s*func\)\s*{[\s\S]*}$/.test(realCode)
+    },
+    testCase: getTestCaseRunner(() => import(/* webpackChunkName: "case8" */ '../exams/exam8/testcase'))
+  },
+  {
+    path: '/exam9',
+    title: 'Complete a DI (Dependency Injection) class',
+    content: getCodeContent(() => import(/* webpackChunkName: "exam9" */ '../exams/exam9/question.txt')),
+    inputFuncName: 'DI',
+    contentValidator(code) {
+      return /class\s*DI\s*{[\s\S]*register\(name,\s*instance\)\s*{[\s\S]*}[\s\S]*run\(arr\)\s*{[\s\S]*}[\s\S]*}/.test(
+        code
+      )
+    },
+    contentIntegrityValidator(code) {
+      const realCode = removeComments(code)
+      // eslint-disable-next-line
+      return /^class\s*DI\s*{[\s\S]*register\(name,\s*instance\)\s*{[\s\S]*}[\s\S]*run\(arr\)\s*{[\s\S]*}[\s\S]*}$/.test(
+        realCode
+      )
+    },
+    testCase: getTestCaseRunner(() => import(/* webpackChunkName: "case9" */ '../exams/exam9/testcase'))
+  },
+  {
+    path: '/exam10',
+    title: 'Complete a difference function',
+    content: getCodeContent(() => import(/* webpackChunkName: "exam10" */ '../exams/exam10/question.txt')),
+    contentValidator(code) {
+      return /function\s*difference\(src,\s*target\)\s*{[\s\S]*}/.test(code)
+    },
+    contentIntegrityValidator(code) {
+      const realCode = removeComments(code)
+      return /^function\s*difference\(src,\s*target\)\s*{[\s\S]*}$/.test(realCode)
+    },
+    testCase: getTestCaseRunner(() => import(/* webpackChunkName: "case10" */ '../exams/exam10/testcase'))
   }
 ]

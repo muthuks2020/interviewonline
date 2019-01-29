@@ -4,7 +4,7 @@ import createLoading from 'dva-loading';
 const runtimeDva = window.g_plugins.mergeConfig('dva');
 let app = dva({
   history: window.g_history,
-  ...((require('/home/muthukumaraswamy/mygir/jsinterview/js-interview-online-master/src/dva.js').config || (() => ({})))()),
+  ...((require('/home/muthukumaraswamy/mygir/jsinterview/interviewonline1/js-interview-online-master/src/dva.js').config || (() => ({})))()),
   ...(runtimeDva.config || {}),
 });
 
@@ -14,4 +14,4 @@ app.use(createLoading());
   app.use(plugin);
 });
 
-app.model({ namespace: 'app', ...(require('/home/muthukumaraswamy/mygir/jsinterview/js-interview-online-master/src/models/app.js').default) });
+app.model({ namespace: 'app', ...(require('/home/muthukumaraswamy/mygir/jsinterview/interviewonline1/js-interview-online-master/src/models/app.js').default) });

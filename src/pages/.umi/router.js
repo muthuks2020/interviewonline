@@ -22,12 +22,12 @@ let routes = [
         "component": dynamic({ loader: () => import(/* webpackChunkName: "p__$id__index" */'../$id/index.js') })
       },
       {
-        "component": () => React.createElement(require('/home/muthukumaraswamy/mygir/jsinterview/js-interview-online-master/node_modules/umi-build-dev/lib/plugins/404/NotFound.js').default, { pagesPath: 'src/pages', hasRoutesInConfig: false })
+        "component": () => React.createElement(require('/home/muthukumaraswamy/mygir/jsinterview/interviewonline1/js-interview-online-master/node_modules/umi-build-dev/lib/plugins/404/NotFound.js').default, { pagesPath: 'src/pages', hasRoutesInConfig: false })
       }
     ]
   },
   {
-    "component": () => React.createElement(require('/home/muthukumaraswamy/mygir/jsinterview/js-interview-online-master/node_modules/umi-build-dev/lib/plugins/404/NotFound.js').default, { pagesPath: 'src/pages', hasRoutesInConfig: false })
+    "component": () => React.createElement(require('/home/muthukumaraswamy/mygir/jsinterview/interviewonline1/js-interview-online-master/node_modules/umi-build-dev/lib/plugins/404/NotFound.js').default, { pagesPath: 'src/pages', hasRoutesInConfig: false })
   }
 ];
 window.g_plugins.applyForEach('patchRoutes', { initialValue: routes });
