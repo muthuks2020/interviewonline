@@ -11,7 +11,7 @@
  * })
  *
  * app.run(['duck', function(duck){
- *   console.log(duck.fly()) //fuck flying
+ *   console.log(duck.fly()) //duck flying
  * }])
  *
  **/
