@@ -6,7 +6,7 @@
  *
  * app.register('duck', {
  *   fly() {
- *     return 'fuck flying'
+ *     return 'duck flying'
  *   }
  * })
  *
