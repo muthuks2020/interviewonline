@@ -1,6 +1,6 @@
 export default [
-  `const src = ['nan', 'feng', 'hao']
-const target = ['aa', 'xiao', 'hao']
+  `const src = ['nan', 'ABC', 'DEF']
+const target = ['aa', 'GHIJ', 'hao']
 
 assert.deepEqual(difference(src, target), ['nan', 'feng'], 'Basic Test Failed')`,
 
