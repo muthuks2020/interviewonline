@@ -2,7 +2,7 @@ export default [
   `const src = ['nan', 'ABC', 'DEF']
 const target = ['aa', 'GHIJ', 'hao']
 
-assert.deepEqual(difference(src, target), ['nan', 'feng'], 'Basic Test Failed')`,
+assert.deepEqual(difference(src, target), ['nan', 'ABCD'], 'Basic Test Failed')`,
 
   `const src = [1, NaN, 3]
 const target = [NaN, 5, NaN]
