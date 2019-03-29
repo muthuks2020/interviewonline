@@ -3,12 +3,12 @@ export default [
 
 app.register('duck', {
   fly() {
-    return 'fuck flying'
+    return 'duck flying'
   }
 });
 
 app.run(['duck', function(duck) {
-  assert.equal(duck.fly(), 'fuck flying', 'Injection test failed')
+  assert.equal(duck.fly(), 'duck flying', 'Injection test failed')
   done()
 }])`,
 
