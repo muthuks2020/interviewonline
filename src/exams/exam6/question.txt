@@ -8,7 +8,7 @@
  *
  *  console.log(camelcase('muthu')) // muthu
  *
- *  console.log(camelcase('hi----you')) // hiYou
+ *  console.log(camelcase('hi----you')) // hiyou
  *
  **/
 function camelcase(str) {
